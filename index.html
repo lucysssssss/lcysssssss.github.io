@@ -20,17 +20,23 @@
 } */
 #w{
 	width: 1190px;
+	height: 37.5rem;
 	margin: auto;
 }
 #box{
+	height: 37.5rem;
 	width: 6.25rem;
+
 }
 canvas{
-	position: absolute;
-	left: 420px;
-	top:100px;
+	width: 100%;
+	height: 100%;
+}
+#p{
 	width: 450px;
 	height: 450px;
+	margin-left: 400px;
+	margin-top: 0px;
 }
   </style>
  </HEAD>
@@ -38,11 +44,13 @@ canvas{
  <BODY>
   <div id="w">
   	  <div id="box">
-  		  <canvas id="pinkboard"></canvas>
-  		  <div style="width: 6.25rem;">
-  		  	  <p  style="color: hotpink; font-size: 25px; position: absolute; left: 610px; top: 230px; animation: name duration timing-function delay iteration-count direction;
-  		  ">刘芳蔚</p>
-  		    </div>
+		  <p  style="width: 100px; height: 30px; color: hotpink; font-size: 25px;position: relative;
+		   left: 580px; top: 220px;
+		  ">刘芳蔚</p>
+		  <div id="p">
+  		  <canvas id="pinkboard">
+		  </canvas>
+		  </div>
   	  </div>
   </div>
   <script>
