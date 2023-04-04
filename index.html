@@ -13,16 +13,38 @@
   margin: 0;
   background: #000;
 }
-canvas {
+/* canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+} */
+#w{
+	width: 1190px;
+	margin: auto;
+}
+#box{
+	width: 6.25rem;
+}
+canvas{
+	position: absolute;
+	left: 420px;
+	top:100px;
+	width: 450px;
+	height: 450px;
 }
   </style>
  </HEAD>
 
  <BODY>
-  <canvas id="pinkboard"></canvas>
+  <div id="w">
+  	  <div id="box">
+  		  <canvas id="pinkboard"></canvas>
+  		  <div style="width: 6.25rem;">
+  		  	  <p  style="color: hotpink; font-size: 25px; position: absolute; left: 610px; top: 230px; animation: name duration timing-function delay iteration-count direction;
+  		  ">刘芳蔚</p>
+  		    </div>
+  	  </div>
+  </div>
   <script>
   /*
  * Settings
@@ -260,9 +282,6 @@ var ParticlePool = (function() {
   }, 10);
 })(document.getElementById('pinkboard'));
   </script>
-  <div style="width: 6.25rem;">
-	  <p  style="color: hotpink; font-size: 25px; position: absolute; left: 610px; top: 230px; animation: name duration timing-function delay iteration-count direction;
-">刘芳蔚</p>
-  </div>
+  
  </BODY>
 </HTML>
